@@ -1,7 +1,7 @@
-FROM alpine:3.6
-
+FROM alpine:latest
+MAINTAINER carry0987 <https://github.com/carry0987>
 ENV SERVER_ADDR     0.0.0.0
-ENV SERVER_PORT     51348
+ENV SERVER_PORT     8300
 ENV PASSWORD        psw
 ENV METHOD          aes-128-ctr
 ENV PROTOCOL        auth_aes128_md5
@@ -21,7 +21,7 @@ RUN apk --no-cache add python \
 
 
 RUN mkdir -p $WORK && \
-    wget -qO- --no-check-certificate https://github.com/shadowsocksr/shadowsocksr/archive/$BRANCH.tar.gz | tar -xzf - -C $WORK
+    wget -qO- --no-check-certificate https://github.com/carry0987/shadowsocksr/archive/$BRANCH.tar.gz | tar -xzf - -C $WORK
 
 
 WORKDIR $WORK/shadowsocksr-$BRANCH/shadowsocks

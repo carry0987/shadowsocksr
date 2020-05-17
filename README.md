@@ -13,31 +13,31 @@ Server
 Debian / Ubuntu:
 
     apt-get install git
-    git clone https://github.com/shadowsocksr/shadowsocksr.git
+    git clone https://github.com/carry0987/shadowsocksr.git
 
 CentOS:
 
     yum install git
-    git clone https://github.com/shadowsocksr/shadowsocksr.git
+    git clone https://github.com/carry0987/shadowsocksr.git
 
 Windows:
 
-    git clone https://github.com/shadowsocksr/shadowsocksr.git
+    git clone https://github.com/carry0987/shadowsocksr.git
 
 ### Usage for single user on linux platform
 
-If you clone it into "~/shadowsocksr"  
-move to "~/shadowsocksr", then run:
+If you clone it into "~/carry0987"  
+move to "~/carry0987", then run:
 
     bash initcfg.sh
 
-move to "~/shadowsocksr/shadowsocks", then run:
+move to "~/carry0987/shadowsocks", then run:
 
     python server.py -p 443 -k password -m aes-128-cfb -O auth_aes128_md5 -o tls1.2_ticket_auth_compatible
 
 Check all the options via `-h`.
 
-You can also use a configuration file instead (recommend), move to "~/shadowsocksr" and edit the file "user-config.json", then move to "~/shadowsocksr/shadowsocks" again, just run:
+You can also use a configuration file instead (recommend), move to "~/carry0987" and edit the file "user-config.json", then move to "~/carry0987/shadowsocks" again, just run:
 
     python server.py
 
@@ -93,13 +93,13 @@ Bugs and Issues
 
 
 
-[Android]:           https://github.com/shadowsocksr/shadowsocksr-android
-[Build Status]:      https://travis-ci.org/shadowsocksr/shadowsocksr.svg?branch=manyuser
+[Android]:           https://github.com/shadowsocksrr/shadowsocksr-android
+[Build Status]:      https://travis-ci.org/shadowsocksrr/shadowsocksr.svg?branch=manyuser
 [Debian sid]:        https://packages.debian.org/unstable/python/shadowsocks
 [iOS]:               https://github.com/shadowsocks/shadowsocks-iOS/wiki/Help
-[Issue Tracker]:     https://github.com/shadowsocksr/shadowsocksr/issues?state=open
+[Issue Tracker]:     https://github.com/shadowsocksrr/shadowsocksr/issues?state=open
 [OpenWRT]:           https://github.com/shadowsocks/openwrt-shadowsocks
-[macOS]:             https://github.com/shadowsocksr/ShadowsocksX-NG
-[Travis CI]:         https://travis-ci.org/shadowsocksr/shadowsocksr
-[Windows]:           https://github.com/shadowsocksr/shadowsocksr-csharp
+[macOS]:             https://github.com/shadowsocksrr/ShadowsocksX-NG
+[Travis CI]:         https://travis-ci.org/shadowsocksrr/shadowsocksr
+[Windows]:           https://github.com/shadowsocksrr/shadowsocksr-csharp
 [Wiki]:              https://github.com/breakwa11/shadowsocks-rss/wiki
